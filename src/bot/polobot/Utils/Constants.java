@@ -1,4 +1,4 @@
-package bot.polobot;
+package bot.polobot.Utils;
 import java.util.ArrayList;
 
 /**

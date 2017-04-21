@@ -1,6 +1,6 @@
 package bot.polobot.Commands.TextCommands;
 
-import bot.polobot.Constants;
+import bot.polobot.Utils.Constants;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 /**

@@ -1,6 +1,6 @@
-package bot.polobot;
+package bot.polobot.Utils;
 
-import bot.polobot.Commands.CommandParser;
+import bot.polobot.Utils.CommandParser;
 import bot.polobot.Commands.TextCommands.CreateRemindCommand;
 import bot.polobot.Commands.ImgCommands.ImgPoiCommand;
 import bot.polobot.Commands.TextCommands.DeleteRemindCommand;

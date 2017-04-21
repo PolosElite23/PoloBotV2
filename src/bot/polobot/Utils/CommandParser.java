@@ -1,4 +1,4 @@
-package bot.polobot.Commands;
+package bot.polobot.Utils;
 
 /**
  * Created by Jason on 4/10/2017.

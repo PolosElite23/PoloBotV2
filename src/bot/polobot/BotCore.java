@@ -1,5 +1,7 @@
 package bot.polobot;
 
+import bot.polobot.Utils.BotListener;
+import bot.polobot.Utils.Constants;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
