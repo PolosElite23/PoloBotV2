@@ -20,6 +20,8 @@ public class CommandParser {
             return "ImgSleepCommand";
         } else if(message.startsWith("!nosleep")){
             return "ImgNoSleepCommand";
+        } else if(message.startsWith("!dead")){
+            return "ImgDeadCommand";
         } else {
             return "NoCommand";
         }

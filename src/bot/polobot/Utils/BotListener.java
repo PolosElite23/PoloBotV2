@@ -1,9 +1,8 @@
 package bot.polobot.Utils;
 
-import bot.polobot.Commands.BotCommand;
+import bot.polobot.Commands.ImgCommands.ImgDeadCommand;
 import bot.polobot.Commands.ImgCommands.ImgNoSleepCommand;
 import bot.polobot.Commands.ImgCommands.ImgSleepCommand;
-import bot.polobot.Utils.CommandParser;
 import bot.polobot.Commands.TextCommands.CreateRemindCommand;
 import bot.polobot.Commands.ImgCommands.ImgPoiCommand;
 import bot.polobot.Commands.TextCommands.DeleteRemindCommand;
@@ -31,6 +30,7 @@ public class BotListener extends ListenerAdapter
             case "DeleteRemindCommand" : DeleteRemindCommand.Execute(event); break;
             case "ImgSleepCommand" : ImgSleepCommand.Execute(event); break;
             case "ImgNoSleepCommand" : ImgNoSleepCommand.Execute(event); break;
+            case "ImgDeadCommand" : ImgDeadCommand.Execute(event); break;
             case "NoCommand": break;
             default: break;
         }
