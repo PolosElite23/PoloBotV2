@@ -7,15 +7,19 @@ public class CommandParser {
 
     public static String Parse(String message){
         if(message.startsWith("!test")){
-            return "test";
+            return "TestCommand";
         } else if(message.startsWith("!poi")) {
-            return "ImgPoi";
+            return "ImgPoiCommand";
         } else if(message.startsWith("!remind")){
-            return "Remind";
+            return "CreateRemindCommand";
         } else if(message.startsWith("!recall")){
-            return "Recall";
+            return "RecallRemindCommand";
         } else if(message.startsWith("!delrecall")){
-            return "DelRecall";
+            return "DeleteRemindCommand";
+        } else if(message.startsWith("!sleep")){
+            return "ImgSleepCommand";
+        } else if(message.startsWith("!nosleep")){
+            return "ImgNoSleepCommand";
         } else {
             return "NoCommand";
         }

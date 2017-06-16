@@ -1,12 +1,13 @@
 package bot.polobot.Commands.TextCommands;
 
+import bot.polobot.Commands.BotCommand;
 import bot.polobot.Utils.Constants;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 /**
  * Created by Jason on 4/10/2017.
  */
-public class CreateRemindCommand
+public class CreateRemindCommand implements BotCommand
 {
     public static void Execute(MessageReceivedEvent event)
     {

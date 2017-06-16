@@ -1,11 +1,12 @@
 package bot.polobot.Commands.TextCommands;
 
+import bot.polobot.Commands.BotCommand;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 /**
  * Created by Jason on 4/10/2017.
  */
-public class TestCommand {
+public class TestCommand implements BotCommand {
 
     public static void Execute(MessageReceivedEvent event)
     {

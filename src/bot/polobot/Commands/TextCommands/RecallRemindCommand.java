@@ -1,12 +1,13 @@
 package bot.polobot.Commands.TextCommands;
 
+import bot.polobot.Commands.BotCommand;
 import bot.polobot.Utils.Constants;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 /**
  * Created by Jason on 4/10/2017.
  */
-public class RecallRemindCommand {
+public class RecallRemindCommand implements BotCommand {
     public static void Execute(MessageReceivedEvent event)
     {
         System.out.println("Recall firing");
@@ -16,9 +17,12 @@ public class RecallRemindCommand {
         int reminderNumber = 0;
 
         String reminderID = message.replace("!recall ","");
-        try {
+        try
+        {
             reminderNumber = Integer.parseInt(reminderID);
-        } catch (NumberFormatException e){
+        }
+        catch (NumberFormatException e)
+        {
             e.printStackTrace();
 
             String errorResponse = "I'm Sorry, " + user + "I can't understand that. Make sure you put in: ```!recall *number*``` or else I can't understand it!";

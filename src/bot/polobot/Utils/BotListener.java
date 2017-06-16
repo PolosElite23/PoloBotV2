@@ -1,5 +1,8 @@
 package bot.polobot.Utils;
 
+import bot.polobot.Commands.BotCommand;
+import bot.polobot.Commands.ImgCommands.ImgNoSleepCommand;
+import bot.polobot.Commands.ImgCommands.ImgSleepCommand;
 import bot.polobot.Utils.CommandParser;
 import bot.polobot.Commands.TextCommands.CreateRemindCommand;
 import bot.polobot.Commands.ImgCommands.ImgPoiCommand;
@@ -17,17 +20,17 @@ public class BotListener extends ListenerAdapter
     public void onMessageReceived (MessageReceivedEvent event) {
         String message = event.getMessage().getContent();
 
-        String command;
-
-        command = CommandParser.Parse(message);
+        String command = CommandParser.Parse(message);
 
         switch (command)
         {
-            case "test": TestCommand.Execute(event); break;
-            case "ImgPoi": ImgPoiCommand.Execute(event); break;
-            case "Remind" : CreateRemindCommand.Execute(event); break;
-            case "Recall" : RecallRemindCommand.Execute(event); break;
-            case "DelRecall" : DeleteRemindCommand.Execute(event); break;
+            case "TestCommand": TestCommand.Execute(event); break;
+            case "ImgPoiCommand": ImgPoiCommand.Execute(event); break;
+            case "CreateRemindCommand" : CreateRemindCommand.Execute(event); break;
+            case "RecallRemindCommand" : RecallRemindCommand.Execute(event); break;
+            case "DeleteRemindCommand" : DeleteRemindCommand.Execute(event); break;
+            case "ImgSleepCommand" : ImgSleepCommand.Execute(event); break;
+            case "ImgNoSleepCommand" : ImgNoSleepCommand.Execute(event); break;
             case "NoCommand": break;
             default: break;
         }

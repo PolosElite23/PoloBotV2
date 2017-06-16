@@ -1,7 +1,13 @@
 package bot.polobot.Commands;
 
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
 /**
- * Created by Jason on 4/19/2017.
+ * Created by Jason on 5/4/2017.
  */
-public class BotCommand {
+public interface BotCommand {
+    static void Execute(MessageReceivedEvent event)
+    {
+
+    }
 }
